@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authenticater Assignment</title>
+</head>
+<body>
+
+
+<div class = "verification"></div>
+
+    
+</body>
+<script>
+
+let username = "admin";
+
+let password = "secret";
+
+let verify = document.querySelector(".verification");
+
+let userLogin = prompt("Enter your User ID:");
+
+let userPassword = prompt("Enter your Password:");
+
+function verifyUser(userLogin, userPassword) {
+    if (userLogin === username && userPassword === password) {
+        verify.innerHTML = "Welcome Admin!";
+    } else {
+        verify.innerHTML = "BAD LOGIN CREDENTIALS";
+    }
+}
+
+verifyUser(userLogin, userPassword);
+
+</script>
+</html>
